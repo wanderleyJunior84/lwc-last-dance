@@ -1,0 +1,23 @@
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tab th, .tab td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tab th:first-child,
+.tab td:first-child {
+  border-left: 1px solid black;
+}
+
+.titulo {
+    background-color: grey;
+}
