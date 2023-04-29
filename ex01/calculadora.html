@@ -1,0 +1,35 @@
+<template>
+    <div class="calculator">
+      <div class="display">{result}</div>
+      <div class="buttons">
+        <div class="row">
+          <button class="number" value="7" onclick={handleClick}>7</button>
+          <button class="number" value="8" onclick={handleClick}>8</button>
+          <button class="number" value="9" onclick={handleClick}>9</button>
+          <button class="operation" value="*" onclick={handleClick}>*</button>
+        </div>
+        <div class="row">
+          <button class="number" value="4" onclick={handleClick}>4</button>
+          <button class="number" value="5" onclick={handleClick}>5</button>
+          <button class="number" value="6" onclick={handleClick}>6</button>
+          <button class="operation" value="/" onclick={handleClick}>/</button>
+        </div>
+        <div class="row">
+          <button class="number" value="1" onclick={handleClick}>1</button>
+          <button class="number" value="2" onclick={handleClick}>2</button>
+          <button class="number" value="3" onclick={handleClick}>3</button>
+          <button class="operation" value="+" onclick={handleClick}>+</button>
+        </div>
+        <div class="row">
+          <button class="number" value="0" onclick={handleClick}>0</button>
+          <button class="number" value="." onclick={handleClick}>.</button>
+          <button class="operation" value="-" onclick={handleClick}>-</button>
+          <button class="clear" onclick={handleClear}>Clear</button>
+        </div>
+        <div class="row">
+          <button class="equals" onclick={handleEquals}>=</button>
+        </div>
+      </div>
+    </div>
+  </template>
+  
