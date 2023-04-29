@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Novo Lead" icon-name="action:new_lead">
+      <div class="slds-m-around_medium">
+        <lightning-record-edit-form object-api-name="Lead" onsubmit={handleSuccess}>
+          <lightning-messages></lightning-messages>
+          <div class="slds-grid slds-wrap">
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="Name"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="Phone"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="MobilePhone"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="AnnualRevenue"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="Rating"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="Company"></lightning-input-field></p>
+            <p class="slds-col slds-size_1-of-1"><lightning-input-field field-name="Status"></lightning-input-field></p>
+          </div>
+  
+          <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-end">
+            <lightning-button label="Limpar" onclick={handleReset} class="slds-m-right_xx-small"></lightning-button>
+            <lightning-button label="Criar Conta" type="submit" variant="brand" class="slds-m-right_xx-small"></lightning-button>
+          </div>
+        </lightning-record-edit-form>
+      </div>
+    </lightning-card>
+  </template>
